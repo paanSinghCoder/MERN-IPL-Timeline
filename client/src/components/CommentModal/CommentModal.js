@@ -57,7 +57,7 @@ class CommentModal extends React.Component {
         alert("No field can be empty.")
       }else{
         alert(this.state.inputName + '  ' + this.state.inputComment);
-        axios.post(`https://mern-map-assignment.herokuapp.com/${this.props.data_id}`, {submitData})
+        axios.post(`https://mern-map-assignment.herokuapp.com/data/add/comments/${this.props.data_id}`, {submitData})
         .then(res => {
           console.log(res);
           console.log(res.data);
@@ -79,7 +79,7 @@ class CommentModal extends React.Component {
       this.setState({
           visible: true
       })
-      axios.get(`https://mern-map-assignment.herokuapp.com/${this.props.data_id}`)
+      axios.get(`https://mern-map-assignment.herokuapp.com/data/comments/${this.props.data_id}`)
         .then(res => {
           this.setState({commentData: res.data});
         });

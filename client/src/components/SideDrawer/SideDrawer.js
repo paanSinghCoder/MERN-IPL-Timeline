@@ -31,7 +31,7 @@ class SideDrawer extends React.Component{
   }
 
   componentDidUpdate = () => {
-    axios.get(`https://mern-map-assignment.herokuapp.com/${this.props.data_id}`)
+    axios.get(`https://mern-map-assignment.herokuapp.com/data/${this.props.data_id}`)
         .then(res => {
           this.setState({data: res.data});
         });
