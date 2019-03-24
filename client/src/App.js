@@ -37,7 +37,7 @@ class App extends Component {
 
   populateMarkerTooltip = (rangeSliderCurrentValue) => {//this method is passed to YearRangeSlider.js
     var fetchedMarkerData = [];
-    axios.get(`http://localhost:4000/data/year/${rangeSliderCurrentValue}`)
+    axios.get(`https://mern-map-assignment.herokuapp.com/${rangeSliderCurrentValue}`)
         .then(res => {
           for(let i = 0; i < res.data.length; i++) {
               fetchedMarkerData.push({

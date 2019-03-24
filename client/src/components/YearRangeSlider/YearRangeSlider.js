@@ -18,7 +18,7 @@ class RangeSlider extends React.Component {
     }
 
     componentDidMount() {//Populating years in year Range Slider
-      axios.get('http://localhost:4000/data/year-list')
+      axios.get('https://mern-map-assignment.herokuapp.com/data/year-list')
         .then(res => {
           // console.log(res.data);
           this.setState({ 

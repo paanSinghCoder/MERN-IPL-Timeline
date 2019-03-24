@@ -5,19 +5,8 @@ const cors = require('cors');
 const PORT = 4000;
 const app =  express();
 const routes = express.Router();
+const path = require('path');
 
-
-// Set up a whitelist and check against it:
-// var whitelist = ['http://localhost:3000/', 'http://example2.com']
-// var corsOptions = {
-//   origin: function (origin, callback) {
-//     if (whitelist.indexOf(origin) !== -1) {
-//       callback(null, true)
-//     } else {
-//       callback(new Error('Not allowed by CORS'))
-//     }
-//   }
-// }
 app.use(cors());
 
 let Data = require('./models/Schema');
@@ -39,6 +28,9 @@ const port = process.env.PORT || PORT;
 //Serves static assets(on heroku)
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
 }
 
 routes.route('/').get((req, res)=> {

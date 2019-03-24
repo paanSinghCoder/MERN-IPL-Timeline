@@ -23,7 +23,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://mern-map-assignment.herokuapp.com",
   "browserslist": [
     ">0.2%",
     "not dead",
