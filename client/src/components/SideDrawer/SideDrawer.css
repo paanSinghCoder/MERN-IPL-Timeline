@@ -1,0 +1,29 @@
+/* SideDrawer css is present in App.css */
+.bm-menu {
+    background: #ffffff;
+}
+
+.bm-morph-shape {
+    fill: #ffffff;
+}
+
+.drawer-header {
+    width: 300px;
+    margin-top: -40px;
+    margin-left: -25px;
+}
+
+.drawer-dp {
+    border-radius: 50%;
+    width: 90px;
+    margin-top: -40px;
+    margin-left: 75px;
+}
+
+.drawer-heading {
+    margin-left: 35px;
+}
+
+.drawer-location {
+    margin-left: 30px;
+}
