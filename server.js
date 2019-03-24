@@ -36,6 +36,11 @@ mongoose.connect(db, { useNewUrlParser: true })
 
 const port = process.env.PORT || PORT;
 
+//Serves static assets(on heroku)
+if(process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+}
+
 routes.route('/').get((req, res)=> {
     Data.find(function(err, data){
         if(err){
