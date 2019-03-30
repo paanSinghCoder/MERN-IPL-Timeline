@@ -24,3 +24,8 @@ In home directory of project start command prompt and execute following commands
 4: cd ..
 
 5: npm run dev
+
+![Capture](https://user-images.githubusercontent.com/9462473/55272160-411abf00-52de-11e9-8520-13c0a49a26cd.PNG)
+
+
+![image](https://user-images.githubusercontent.com/9462473/55272177-8e972c00-52de-11e9-8bde-a90217ae9a96.png)
