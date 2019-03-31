@@ -13,21 +13,22 @@ UI Library: Ant Design
 Client folder contains the react code. server.js is the starting point for express server which also contains routes.
 
 Steps to repro the app on localhost: 
-In home directory of project start command prompt and execute following commands(Make sure node is installed):
 
-1: Add mongodb url by going to config/keys.js and add your mongodb url.
+1: Add mongodb url by going to config/keys.js.
 
 module.exports = {
     mongoURI : 'YOUR_MONGODB_URL_HERE'
 }
 
-2: npm install
+Then in home directory of project start command prompt and execute following commands(Make sure node is installed):
 
-3: cd client
+2: cd client
 
-4: npm install
+3: npm install
 
-5: cd ..
+4: cd ..
+
+5: npm install
 
 6: npm run dev
 
