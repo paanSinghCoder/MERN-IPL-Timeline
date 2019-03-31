@@ -15,15 +15,21 @@ Client folder contains the react code. server.js is the starting point for expre
 Steps to repro the app on localhost: 
 In home directory of project start command prompt and execute following commands(Make sure node is installed):
 
-1: npm install
+1: Add mongodb url by going to config/keys.js and add your mongodb url.
 
-2: cd client
+module.exports = {
+    mongoURI : 'YOUR_MONGODB_URL_HERE'
+}
 
-3: npm install
+2: npm install
 
-4: cd ..
+3: cd client
 
-5: npm run dev
+4: npm install
+
+5: cd ..
+
+6: npm run dev
 
 ![Capture](https://user-images.githubusercontent.com/9462473/55272160-411abf00-52de-11e9-8520-13c0a49a26cd.PNG)
 
