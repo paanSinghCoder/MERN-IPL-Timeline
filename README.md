@@ -3,9 +3,9 @@ IPL Timeline app developed in MERN stack
 
 In a nutshell, IPL timeline displays the IPL cricket match played in stadiums each year. Moving the slider on bottom right of screen will make the markers change on the map. Hovering on individual marker displays a tooltip and when clicked on marker, detailed info about the stadium is displayed. After clicking on show comments, all comments made by users on that stadium is displayed in a modal.
 
-Tech stack used: Mongodb, Express js, React js, Node js.
+Tech stack used: Mongodb, ExpressJS, ReactJS, NodeJS.
 
-Map used: Leaflet js
+Map used: LeafletJS
 
 UI Library: Ant Design
 
